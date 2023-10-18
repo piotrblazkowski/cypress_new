@@ -37,11 +37,10 @@ describe('example to-do app', () => {
 
   });
 
-  it('check if there is only one child', {}, () => {
+  it('wrap email input', {}, () => {
    cy.get('input[id="email1"]')
    cy.wrap({ placeholder: 'Email' }).its('placeholder').should('eq', 'Email')
    cy.wrap({id: 'email1'}).its('id').should('eq', 'email1')
-   .children().should('have.lenght', 1)
   });
 
   it('check if there is 16 children under given div', {}, () => {
@@ -49,10 +48,16 @@ describe('example to-do app', () => {
     
   });
   
-  it('test', {}, () => {
-
+  it('check if input email has class and attribute', {}, () => {
+    cy.get('input[id="email1"]').should('have.class', 'form-control action-email').and('have.attr', 'placeholder')
   });
-  
+
+  it.only('check if checkbox have property and is not checked and have attribute value', {}, () => {
+    cy.get('input[type="checkbox"][value="checkbox1"]').first().should('have.prop', 'autofocus', false)
+    .should('be.not.checked')
+    .should('have.attr', 'value')
+  });
+
   // it.only('check', {}, () => {
   // });
 });
