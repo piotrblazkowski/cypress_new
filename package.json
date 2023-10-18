@@ -6,7 +6,7 @@
   },
   "scripts": {
     "cypress:open": "cypress open",
-    "test": "npx cypress run --spec 'cypress/e2e/my/test.cy.js'",
+    "test": "npx cypress run --spec 'cypress/e2e/my/test.cy.js' --env allure=true",
     "report": "npx allure generate allure-result --clean -o allure-report"
   }
 }
