@@ -1,10 +1,13 @@
 import { defineConfig } from 'cypress';
 
-export default defineConfig({
-  e2e: {
-    // baseUrl: 'http://localhost:8484',
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-  },
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+// import allureWriter from "@shelex/cypress-allure-plugin/writer";
+
+module.exports = defineConfig({
+    e2e: {
+        setupNodeEvents(on, config) {
+            allureWriter(on, config);
+            return config;
+        }
+    }
 });
