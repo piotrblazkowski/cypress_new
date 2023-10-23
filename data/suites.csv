@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Oct 23 10:41:35 UTC 2023","Mon Oct 23 10:41:36 UTC 2023","1600","","POM Test","","POM Test","Check if user is logged properly","Check if user is logged properly",""
+"passed","Mon Oct 23 10:41:06 UTC 2023","Mon Oct 23 10:41:19 UTC 2023","12307","","example to-do app","","example to-do app","check login input","check login input",""
+"passed","Mon Oct 23 10:41:46 UTC 2023","Mon Oct 23 10:41:50 UTC 2023","3730","","example to-do app","","example to-do app","check if checkbox have property and is not checked and have attribute value","check if checkbox have property and is not checked and have attribute value",""
+"passed","Mon Oct 23 10:41:43 UTC 2023","Mon Oct 23 10:41:43 UTC 2023","257","","example to-do app","","example to-do app","check forcing to click on Zaloguj","check forcing to click on Zaloguj",""
+"passed","Mon Oct 23 10:41:39 UTC 2023","Mon Oct 23 10:41:43 UTC 2023","3660","","example to-do app","","example to-do app","alias","alias",""
+"passed","Mon Oct 23 10:41:21 UTC 2023","Mon Oct 23 10:41:28 UTC 2023","6592","","example to-do app","","example to-do app","proper login","proper login",""
+"passed","Mon Oct 23 10:41:31 UTC 2023","Mon Oct 23 10:41:35 UTC 2023","3889","","POM Test","","POM Test","Verify Login successful","Verify Login successful",""
