@@ -13,7 +13,9 @@
     "test": "npx cypress run --spec 'cypress/e2e/my/test.cy.js' --env allure=true",
     "report": "npx allure generate allure-results --clean -o allure-report",
     "cy:clientLogin": "cypress run --reporter mocha-allure-reporter",
-    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
-    "test:allure": "npm run cy:clientLogin && npm run report:allure"
+    "manual_report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "report:allure": "allure generate allure-results --clean -o allure-report",
+    "test:allure": "npm run cy:clientLogin && npm run report:allure",
+    "manual_test:allure": "npm run cy:clientLogin && npm run manual_report:allure"
   }
 }
