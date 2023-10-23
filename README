@@ -1,0 +1,9 @@
+npm i mocha
+npm i mocha-allure-reporter
+npm i -D @shelex/cypress-allure-plugin
+
+?
+npm i --save-dev cypress-mochawesome-reporter
+npm i --save-dev mochawesome-merg
+npm install --save-dev mocha cypress-multi-reporters mochawesome
+npm install -g allure-commandline --save-dev
