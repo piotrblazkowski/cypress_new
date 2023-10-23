@@ -7,3 +7,9 @@ npm i --save-dev cypress-mochawesome-reporter
 npm i --save-dev mochawesome-merg
 npm install --save-dev mocha cypress-multi-reporters mochawesome
 npm install -g allure-commandline --save-dev
+
+2. go to repository on github, prepare token
+3. save the token in Azure
+4. go to github https://github.com/piotrblazkowski/cypress_new/settings/actions
+5. add permissions to read and write
+6. setup pages in github pages https://github.com/piotrblazkowski/cypress_new/settings/pages
